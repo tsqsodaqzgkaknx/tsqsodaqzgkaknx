@@ -19,8 +19,7 @@ public interface ArrayMapper<T> extends Function<String, T> {
     IntFunction<T[]> getArrayParseFunction();
 
     /**
-     * 进行转化, 将String类型的数组转化为某指定类型
-     * @param array String array
+     * 进行转化
      */
     default T[] map(String[] array){
         //真正被使用的对外接口
